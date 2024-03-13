@@ -4,7 +4,6 @@ class ShoppingBasket{
     }
     getTotalPrice() {
         let totalPrice = 0
-        // const priceArray = this.candyArray.map((candy) => candy.getPrice());
         this.candyArray.forEach((candy) => {totalPrice += candy.getPrice()});
         return totalPrice;
         }
@@ -14,3 +13,5 @@ class ShoppingBasket{
     }    
 }
 module.exports = ShoppingBasket;
+
+        // const priceArray = this.candyArray.map((candy) => candy.getPrice());
